@@ -1,12 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Футбол (блочный)</title>
 </head>
+
 <body>
-    
+    <style>
+        .wrapper_with_boll {
+            background: url("boll_png.png") right top repeat-y
+        }
+
+        .wrapper_navigation_menu_bg {
+            background: url("fon.png") left top repeat-y
+        }
+
+        .header,
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ADD8E6
+        }
+
+        .header_text,
+        .footer_text {
+            text-transform: uppercase;
+            text-align: center;
+            color: blue;
+            font-weight: bold;
+            font-size: 6mm
+        }
+
+        .navigation {
+            width: 186px;
+            float: left;
+            margin-right: -186px;
+        }
+
+        .navigation_title {
+            font-weight: bold;
+            margin-left: 5mm
+        }
+
+        .navigation_link {
+            text-decoration: underline;
+            color: blue
+        }
+
+        .content {
+            margin-left: 186px;
+            float: right
+        }
+
+        .content_title {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold
+        }
+
+        .content_photo {
+            float: left;
+            margin-left: 7px;
+            margin-right: 7px
+        }
+
+        .content_text {
+            text-indent: 1cm;
+            text-align: left
+        }
+
+        .both {
+            clear: both
+        }
+
+        @media (max-width: 768px) {
+
+            .content_photo {
+                width: 100%;
+                margin-right: 0;
+            }
+
+            .header,
+            .footer {
+                display: none;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+            .content {
+                margin-left: 0;
+                float: none;
+            }
+
+            .wrapper_navigation_menu_bg {
+                background: url("fon.png");
+                background-repeat: repeat-x;
+                background-position: bottom;
+                background-size: 500px;
+            }
+
+            .content_photo {
+                margin-left: 0;
+                margin-right: 0
+            }
+        }
+    </style>
+    <div class="wrapper_with_boll">
+        <div class="wrapper_navigation_menu_bg">
+            <div class="header">
+                <p class="header_text">Привет участникам соревнований!</p>
+            </div>
+            <div class="content">
+                <p class="content_title">Футбол</p>
+                <img src='foto.png' class="content_photo">
+                <p class="content_text">Футбол&mdash;командный вид спорта, в котором целью
+                    является забить мяч в ворота соперника ногами или другими частями тела (кроме рук) большее
+                    количество раз, чем команда соперника.</p>
+                <p class="content_text">Есть 17 официальный правил игры, каждое из которых
+                    содержит список оговорок и руководящих принципов. Эти правила предназначены для приминения на всех
+                    уровнях футбола, хотя есть некоторые изминения для таких групп, как юниоры, взрослые, женщины и люди
+                    с ограниченными физическими возможностями. Законы очень часто формулировались в общих чертах,
+                    которые позволяют упростить их применения в зависимости от характера.</p>
+            </div>
+            <div class="navigation">
+                <p class="navigation_title">Виды спорта:</p>
+                <ul>
+                    <li><span class="navigation_link">конькобежный спорт</span></li>
+                    <li><span class="navigation_link">биатлон</span></li>
+                    <li><span class="navigation_link">футбол</span></li>
+                    <li><span class="navigation_link">стрельба из лука</span></li>
+                    <li><span class="navigation_link">прыжки в длину</span></li>
+                    <li><span class="navigation_link">прыжки в высоту<span></li>
+                    <li><span class="navigation_link">синхронное плавание</span></li>
+                    <li><span class="navigation_link">гребля</span></li>
+                    <li><span class="navigation_link">настольный теннис<span></li>
+                    <li><span class="navigation_link">прыжки в длину</span></li>
+                    <li><span class="navigation_link">прыжки в высоту<span></li>
+                </ul>
+            </div>
+
+            <div class="both"></div>
+            <div class="footer">
+
+
+
+                <p class='footer_text'>
+                    Главное не победа, а участие!
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
